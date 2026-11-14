@@ -1,0 +1,11 @@
+ID,Module,Technique,Input,Expected,Actual,Status
+TC01,Register,EP,valid name+email+password 'Passw0rd!',Account created,,
+TC02,Register,BVA,password length 7,Rejected with message,,
+TC03,Register,BVA,password length 8,Accepted,,
+TC04,Register,BVA,password length 9,Accepted,,
+TC05,Login,Decision table,valid email + valid password,Dashboard shown,,
+TC06,Login,Decision table,valid email + wrong password,Error message,,
+TC07,Login,Decision table,unknown email + valid password,Error message,,
+TC08,Courses,EP,enrol twice in same course,Single enrolment,,
+TC09,AI notes,EP,empty topic,Prompt to enter topic,,
+TC10,Quiz,EP,submit with all answers blank,Score 0/5,,
