@@ -1,0 +1,35 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\MANASA KV\Downloads\AI_Learning_Management_System\AI_Learning_Management_System\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\MANASA KV\Downloads\AI_Learning_Management_System\AI_Learning_Management_System
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 25 items
+
+tests/test_auth.py::test_password_boundary[aaaaaaa-400] PASSED           [  4%]
+tests/test_auth.py::test_password_boundary[aaaaaaaa-302] PASSED          [  8%]
+tests/test_auth.py::test_password_boundary[aaaaaaaaa-302] PASSED         [ 12%]
+tests/test_auth.py::test_register_duplicate_email PASSED                 [ 16%]
+tests/test_auth.py::test_register_invalid_email[] PASSED                 [ 20%]
+tests/test_auth.py::test_register_invalid_email[no-at-sign] PASSED       [ 24%]
+tests/test_auth.py::test_register_invalid_email[a@b] PASSED              [ 28%]
+tests/test_auth.py::test_login_decision_table[student@lms.test-Student@123-302] PASSED [ 32%]
+tests/test_auth.py::test_login_decision_table[student@lms.test-wrong-pass-401] PASSED [ 36%]
+tests/test_auth.py::test_login_decision_table[nobody@lms.test-Student@123-401] PASSED [ 40%]
+tests/test_auth.py::test_login_decision_table[nobody@lms.test-wrong-pass-401] PASSED [ 44%]
+tests/test_auth.py::test_login_decision_table[--401] PASSED              [ 48%]
+tests/test_auth.py::test_protected_page_redirects_when_logged_out PASSED [ 52%]
+tests/test_auth.py::test_logout_ends_session PASSED                      [ 56%]
+tests/test_lms.py::test_courses_and_enrol PASSED                         [ 60%]
+tests/test_lms.py::test_student_cannot_add_material PASSED               [ 64%]
+tests/test_lms.py::test_teacher_can_add_material PASSED                  [ 68%]
+tests/test_lms.py::test_notes_require_topic PASSED                       [ 72%]
+tests/test_lms.py::test_notes_generated PASSED                           [ 76%]
+tests/test_lms.py::test_quiz_scoring_and_dashboard PASSED                [ 80%]
+tests/test_lms.py::test_quiz_fallback_shape PASSED                       [ 84%]
+tests/test_lms.py::test_markdown_is_escaped PASSED                       [ 88%]
+tests/test_lms.py::test_teacher_dashboard_and_restrictions PASSED        [ 92%]
+tests/test_lms.py::test_teacher_creates_course PASSED                    [ 96%]
+tests/test_lms.py::test_student_cannot_create_course PASSED              [100%]
+
+============================= 25 passed in 8.27s ==============================

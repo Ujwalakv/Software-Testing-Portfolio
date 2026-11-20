@@ -1,0 +1,10 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\MANASA KV\Downloads\AI_Learning_Management_System\AI_Learning_Management_System\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\MANASA KV\Downloads\AI_Learning_Management_System
+collecting ... collected 2 items
+
+..\Software-Testing-Portfolio\05_Test_Automation\selenium_login_test.py::test_login_shows_dashboard PASSED [ 50%]
+..\Software-Testing-Portfolio\05_Test_Automation\selenium_login_test.py::test_wrong_password_shows_error PASSED [100%]
+
+============================= 2 passed in 11.24s ==============================
